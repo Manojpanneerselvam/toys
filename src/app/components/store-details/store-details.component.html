@@ -1,0 +1,19 @@
+<div class="app-store-details">
+    <div class="container">
+        <a routerLink="/list" class="btn-text">Back to Store</a>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" *ngFor="let value of storeValue">
+                <div class="card">
+                    <img class="card-img-top" src="/assets/img.svg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{value.Title}}</h5>
+                        <p class="card-text">{{value.Description}}</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <br />
+            </div>
+
+        </div>
+    </div>
+</div>
